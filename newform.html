@@ -215,12 +215,6 @@
   <script src="assets/js/custom.js"></script>
 
   <script>
-    $(".option").click(function(){
-      $(".option").removeClass("active");
-      $(this).addClass("active"); 
-    });
-  </script>
-    <script>
         
         function toggleNominationFields() {
     var nomination = document.getElementById("nomination").value;
@@ -606,6 +600,11 @@
   </footer>
 
   
-
+ <script>
+    $(".option").click(function(){
+      $(".option").removeClass("active");
+      $(this).addClass("active"); 
+    });
+  </script>
   </body>
 </html>
