@@ -786,7 +786,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li a {
-  display: block;
+  display: flex;
   font-weight: 400;
   font-size: 15px;
   text-transform: capitalize;
