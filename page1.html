@@ -56,6 +56,13 @@ h1{
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.column img:hover {
+  transform: scale(1.1); /* Enlarge slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow effect */
 }
 
 /* Style the buttons */
@@ -76,6 +83,13 @@ h1{
   background-color: #666;
   color: white;
 }
+.footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+            font-size: 14px;
+        }
 </style>
 </head>
 <body>
@@ -94,7 +108,7 @@ h1{
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="newform.html">Nomination Form</a></li>
                         <li><a href="new_gall.html">Previous Awardees</a></li>
-                        <li><a href="https://iiitdelhi.almaconnect.com/">Alma Connect</a></li>
+                        <li><a href="https://alumni.iiitd.ac.in/" target="_blank">Alumni Website</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -148,7 +162,9 @@ h1{
     
   </div>
 </div>
-
+<footer class="footer">
+    IIIT-Delhi Young Alumni Awards
+  </footer>
 <script>
 // Get the elements with class="column"
 var elements = document.getElementsByClassName("column");
