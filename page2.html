@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <title>IIIT-Delhi Young Alumni Awards Nomination Form</title>
+      
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+        <link rel="stylesheet" href="assets/css/owl.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
 <style>
 * {
   box-sizing: border-box;
@@ -23,24 +38,52 @@ h1{
   padding: 32px;
 }
 
-.row {
+.roww {
   display: -ms-flexbox; /* IE 10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE 10 */
   flex-wrap: wrap;
-  padding: 0 4px;
+  margin-top: 70px;
+  /* padding: 0 4px; */
+  padding: 8px; /* Add padding around the whole gallery */
+
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
 }
 
 /* Create two equal columns that sits next to each other */
 .column {
   -ms-flex: 25%; /* IE 10 */
   flex: 25%;
-  padding: 0 4px;
+  padding: 8px;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+}
+
+.column img {
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Hover effect: Pop out like cards */
+.column img:hover {
+  transform: scale(1.1); /* Enlarge slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow effect */
 }
 
 /* Style the buttons */
@@ -61,21 +104,46 @@ h1{
   background-color: #666;
   color: white;
 }
+.footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+            font-size: 14px;
+        }
 </style>
 </head>
 <body>
 
 <!-- Header -->
-<div class="header" id="myHeader">
-  <h1>Foundation Day 2023</h1>
-  <!-- <p>Click on any to change the grid view.</p> -->
-  <!-- <button class="btn" onclick="one()">1</button>
-  <button class="btn active" onclick="two()">2</button> -->
-  <!-- <button class="btn" onclick="four()"></button> -->
-</div>
+
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <!-- <img src="assets/images/hehe3.png" alt=""> -->
+                        <img src="assets/images/logo5.png" alt="" style="height: 50px; width: auto;">
+
+                    </a>
+                    <ul class="nav">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="newform.html">Nomination Form</a></li>
+                        <li><a href="new_gall.html">Previous Awardees</a></li>
+                        <li><a href="https://alumni.iiitd.ac.in/" target="_blank">Alumni Website</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
 
 <!-- Photo Grid -->
-<div class="row"> 
+<div class="roww"> 
   <div class="column">
     <img src="assets/han/images/Foundation_Day-025.jpg" style="width:100%">
     <img src="assets/han/images/Foundation_Day-031.jpg" style="width:100%">
@@ -105,7 +173,9 @@ h1{
   </div>
   
 </div>
-
+<footer class="footer">
+    IIIT-Delhi Young Alumni Awards
+  </footer>
 <script>
 // Get the elements with class="column"
 var elements = document.getElementsByClassName("column");
